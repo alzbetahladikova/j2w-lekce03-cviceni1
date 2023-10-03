@@ -2,7 +2,9 @@ package cz.czechitas.java2webapps.lekce3.entity;
 
 import java.time.LocalDate;
 import java.time.Period;
-
+/*
+* entita obsahující osobní údaje.
+ */
 public class Person {
     private String givenName;
     private String surname;
