@@ -2,14 +2,15 @@ package cz.czechitas.java2webapps.lekce3.entity;
 
 import java.time.LocalDate;
 import java.time.Period;
+
 /*
-* entita obsahující osobní údaje.
+ * entita obsahující osobní údaje.
  */
 public class Person {
     private String givenName;
     private String surname;
     private LocalDate birthDate;
-    private String photosURL;
+    private String photoURL;
 
     public String getGivenName() {
         return givenName;
@@ -35,16 +36,17 @@ public class Person {
         this.birthDate = birthDate;
     }
 
-    public String getPhotosURL() {
-        return photosURL;
+    public String getPhotoURL() {
+        return photoURL;
     }
 
-    public void setPhotosURL(String photosURL) {
-        this.photosURL = photosURL;
+    public void setPhotoURL(String photoURL) {
+        this.photoURL = photoURL;
     }
 
     public int getAge() {
         Period period = birthDate.until(LocalDate.now());
-    return period.getYears();}
+        return period.getYears();
+    }
 
 }
